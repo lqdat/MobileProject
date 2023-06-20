@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -24,6 +25,12 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
+import Login from './src/screens/login';
+import {Provider} from 'react-redux';
+import store from './src/redux/rootStore';
+import AppNavigation from './src/navigation';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -63,36 +70,23 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <GestureHandlerRootView style={{flex: 1}}>
+      {/* <BottomSheetModalProvider> */}
       <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+        translucent
+        backgroundColor="transparent"
+        barStyle={'light-content'}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+      {/* <Provider store={store}> */}
+      {/* <AuthProvider> */}
+
+      <AppNavigation />
+      {/* <FlashMessage position="top" />
+            </>
+          </AuthProvider> */}
+      {/* </Provider> */}
+      {/* </BottomSheetModalProvider> */}
+    </GestureHandlerRootView>
   );
 }
 

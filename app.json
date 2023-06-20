@@ -1,4 +1,9 @@
 {
   "name": "MobileProject",
-  "displayName": "MobileProject"
+  "displayName": "MobileProject",
+  "extra": {
+    "eas": {
+      "projectId": "9cd55662-78cb-4f0b-b7fe-02bcea847dec"
+    }
+  }
 }

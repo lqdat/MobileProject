@@ -1,0 +1,29 @@
+//stack screen
+export const LOGIN_SCREEN = 'LOGIN_SCREEN';
+export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
+
+export const BOTTOM_NAV = 'BOTTOM_NAV';
+export const LOGIN_NAV = 'LOGIN_NAV';
+export const PROFILE = 'PROFILE';
+export const HOME = 'HOME';
+export const HOME_STACK = 'HOME_STACK';
+export const MAP = 'MAP';
+export const MAP_STACK = 'MAP_STACK';
+export const NOTIFY_STACK = 'NOTIFY_STACK';
+export const MESSAGE_STACK = 'MESSAGE_STACK';
+export const PROFILE_STACK = 'PROFILE_STACK';
+export const NOTIFY = 'NOTIFY';
+export const HEADER = 'HEADER';
+export const MESSAGE = 'MESSAGE';
+export const SEARCH = 'SEARCH';
+export const DETAILS = 'DETAILS';
+export const MAP_OUTTER = 'MAP_OUTTER';
+export const SEARCH_FILTER = 'SEARCH_FILTER';
+export const LIST_DASHBOARD = 'LIST_DASHBOARD';
+export const SCAN_QR = 'SCAN_QR';
+export const INFO = 'INFO';
+export const DRAWER = 'DRAWER';
+export const MAIN_SCREENS = 'MAIN_SCREENS';
+export const CATEGORY = 'CATEGORY';
+export const LISTPTD = 'LISTPTD';
+export const APPROVE = 'APPROVE';
